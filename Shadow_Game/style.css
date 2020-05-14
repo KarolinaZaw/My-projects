@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(images/bush.png);
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 40px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.container {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.shadow {
+    margin: 20px 20px;
+}
+
+.options {
+    height: 200px;
+    width: 200px;
+    background-color: lightgray;
+    margin: 20px 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: lightsteelblue;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid lightsteelblue;
+}
+
+.pacman {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid lightsteelblue;
+    border-left: 100px solid lightsteelblue;
+    border-bottom: 100px solid lightsteelblue;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.visible {
+    background-color: limegreen;
+}
+
+.pacman .visible {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid rgb(214, 32, 59);
+    border-left: 100px solid rgb(214, 32, 59);
+    border-bottom: 100px solid rgb(214, 32, 59);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.triangle .visible {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid yellow;
+}
+
+.square .visible {
+    background-color: tomato;
+}
