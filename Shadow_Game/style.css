@@ -84,11 +84,7 @@ h3 {
     border-bottom-right-radius: 100px;
 }
 
-.visible {
-    background-color: limegreen;
-}
-
-.pacman .visible {
+.option.pacman {
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
@@ -101,7 +97,7 @@ h3 {
     border-bottom-right-radius: 100px;
 }
 
-.triangle .visible {
+.option.triangle {
     width: 0;
     height: 0;
     border-left: 100px solid transparent;
@@ -109,6 +105,13 @@ h3 {
     border-bottom: 200px solid yellow;
 }
 
-.square .visible {
+.option.square {
     background-color: tomato;
+}
+
+.option.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(27, 177, 27);
 }
